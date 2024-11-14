@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+//when pushing, make sure to switch username and email using git config --global user.name or user.email
 
 //initialize strings to be empty. Must contain some value to avoid errors though.
 char lastName[]="";
