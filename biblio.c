@@ -11,10 +11,19 @@ char journal[]="";
 int volume;
 int year;
 
+
+struct book{
+    char author[255];//have the user separate the authors somehow. Check for spaces to determine last name?
+    char title[255];
+    int year;
+
+};
+
 const char* mla(){
 //returns a pointer to the first character in memory
-    return firstName;
+    return NULL;
 }
+
 
 int main(){
     //make powershell script run
@@ -33,9 +42,12 @@ int main(){
     //const char* chosen = getenv(envName);
     //printf("%s",chosen);
     //store them in memory
-    char name[]="\0";
-    scanf("%s", name);//wait for input from user
+    // char name[]="\0";
+    // scanf("%s", name);//wait for input from user
 
-    strcpy(firstName, name);
+    // strcpy(firstName, name);
+
+
+    //read from the file
     puts(mla());
 }
